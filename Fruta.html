@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script>
+   var doc=function(doc) {
+     document.write(doc)
+     document.write("<br>")
+   }
+  var maça=Number(prompt("digite quantos kg de maçã voce comprou "))
+  var mor=Number(prompt("digite quantos kg de morango voce comprou "))
+  
+  if(maça<=5 && mor<=5){
+    var maça1=1.80 * maça
+    mor1=2.50 * mor 
+    doc("o cliente ira pagar de maça e " +maça1 + "R$")
+    doc("o cliente ira pagar de morango e " +mor1 + "R$")
+
+
+  }
+  else if(maça<10 && mor<10){
+    var maça2=1.50 * maça 
+    var mor2=2.20 * mor
+    doc("o cliente ira pagar de maçã e" +maça2.toFixed(2) + "R$")
+    doc("o cliente ira pagar de morango e " +mor2.toFixed(2) + "R$")
+
+  }
+  else {
+    var maça3=1.50 * maça
+    var mor4=2.20 * mor
+    var desconto2=mor4 * 90/100
+
+
+    var desconto=maça3 * 90/100
+    
+    doc("o cliente ira pagar de maçã e " + desconto.toFixed(2) + "R$")
+    doc("o cliente ira pagar de morango e " + desconto2.toFixed(2) + "R$")
+
+
+
+  }
+  
+ 
+  
+
+</script>
+  
+</body>
+</html>
